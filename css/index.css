@@ -1,0 +1,886 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+@font-face{
+    src: url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+    font-family: Barlow Condensed, Arial, Helvetica, sans-serif;
+}
+body{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-family: Barlow Condensed, Helvetica, sans-serif;
+}
+
+#home{
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    z-index: 10;
+}
+
+#home p{
+    margin: 0;
+    font-weight: bold;
+    color: black;
+}
+
+#bg-top{
+    width: 100vw;
+    margin: 0 auto;
+    background-color: #1b512d;
+    background-image: url(.././img/bgtop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#bg-top::before{
+    background-color: #1b512dcc;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+header{
+    width: 100vw;
+    height: 4rem;
+}
+
+.cabecalho{
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#img-logo{
+    position: relative;
+}
+
+.contato{
+    position: relative;
+}
+
+main{
+    width: 100vw;
+    margin: 0 auto;
+}
+    
+.contato p, span{
+    display: inline-block;
+}
+
+.contato img{
+    vertical-align: middle;
+}
+
+#sign-up{
+    margin: 0 auto;
+    width: 100vw;
+    height: fit-content;
+    padding: 3.5rem 0;
+}
+
+#sign-up-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#texto-signup{
+    width: 47%;
+    min-width: 320px;
+    color: whitesmoke;
+    position: relative;
+    max-width: 400px;
+    margin-left: 2rem;
+}
+
+#texto-signup h1{
+    margin: 0 1rem 0 0;
+    font-size: 2.7rem;
+}
+
+#p1{
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+#p2, #p3, #p4{
+    margin: 1rem 0 1rem 0;
+    font-size: 1rem;
+}
+
+#p3{
+    margin: 1rem 2rem 1rem 0;
+}
+
+#cadastro{
+    width: 30%;
+    min-width: 320px;
+    max-width: 400px;
+    max-height: 390px;
+    height: fit-content;
+    background-color: whitesmoke;
+    padding-bottom: 1rem;
+    position: relative;
+    margin-left: 2rem;
+}
+
+#cadastro h1{
+    margin: 1rem 0 0 0;
+    font-size: 2.7rem;
+    text-align: center;
+}
+#save{
+    margin: .4rem 0 .4rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#cadastro p strong{
+    font-weight: normal;
+    color: palevioletred;
+}
+
+
+#cadastro form input[type="text"],#cadastro form input[type="email"],#cadastro form input[type="tel"]{
+    position: relative;
+    width: 65%;
+    max-width: 80%;
+    height: 2.2rem;
+    left: 11%;
+    margin: 0 0 .4rem 0;
+    background-color:rgba( 180, 210, 252, .5);
+    border: none;
+    padding-left: 13%;
+
+}
+
+#cadastro select,#cadastro input[type="submit"]{
+    position: relative;
+    width: 79%;
+    height: 2.2rem;
+    margin: 0 0 .4rem 0;
+    left: 11%;
+    border: none;
+}
+
+#cadastro select{
+    padding-left: 13%;
+    background-color:rgba( 180, 210, 252, .5);
+    background-image: url(../img/wallet.png);
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+}
+
+#cadastro input[type="submit"]{
+    background-color: rgb(38, 146, 173);
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+#cadastro input[type="submit"]{
+    cursor: pointer;
+    
+}
+
+#cadastro input[type='text'] {
+    background-image: url(../img/formauser.png);
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+}
+
+#cadastro input[type ="tel"]{
+    background-image: url(../img/phoneinput.png);
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+}
+
+#cadastro input[type='email']{
+    background-image: url(../img/email.png);
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+}
+
+#cadastro-check{
+    margin: 0 auto;
+    width: 79%;
+    height: fit-content;
+    padding: 1rem 0 .3rem 0;
+}
+
+#cadastro-check img{
+    margin-right: .3rem;
+    vertical-align: text-bottom;
+}
+
+#cadastro-check p{
+    margin: 0;
+    text-align: center;
+    font-size: .9rem;
+    color: rgb(121, 120, 120);
+}
+
+
+.introducao{
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.introducao h1{
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 3.5rem 0 1rem 0 ;
+}
+
+.infos{
+    height: fit-content;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+.introducao .info1, .info2{
+    display: inline-block;
+}
+
+.introducao .info2{
+    padding-left: 1rem;
+}
+
+.introducao .info1 img, .info2 img{
+    padding: 0 1rem 0 0;
+    display: inline-block;
+}
+
+.introducao .info1 p, .info2 p{
+    display: inline-block;
+}
+
+.info3{
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+#tabela{
+    width: 70vw;
+    height: 29.53vw;
+    background-color: #219ebc;;
+    margin: 0 auto;
+    margin-top: 2rem;
+    position: relative;
+}
+
+#tabela img{
+    width: 100%;
+    height: 100%;
+}
+
+#img1{
+    width: 25%;
+    height: 33.3%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+#textoimg1{
+    width: 25%;
+    height: 33.3%;
+    position: absolute;
+    left: 25%;
+    top: 0;
+}
+
+#img2{
+    width: 25%;
+    height: 33.3%;
+    background-image: url(../img/caatinga.jpg);
+    background-size: cover;
+    position: absolute;
+    left: calc(25% * 2);
+    top: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+#textoimg2{
+    width: 25%;
+    height: 33.3%;
+    position: absolute;
+    left: calc(25% * 3);
+    top: 0;
+}
+
+#textoimg3{
+    width: 25%;
+    height: 33.3%;
+    position: absolute;
+    left: 0;
+    top: 33.3%;
+}
+
+#img3{
+    width: 25%;
+    height: 33.3%;
+    background-image: url(../img/cerrado.jpg);
+    background-size: cover;
+    position: absolute;
+    left: calc(25%);
+    top: 33.3%;
+    text-align: center;
+    font-size: 40px;
+}
+
+#textoimg4{
+    width: 25%;
+    height: 33.3%;
+    position: absolute;
+    left: calc(25% * 2);
+    top: 33.3%;
+}
+
+#img4{
+    width: 25%;
+    height: 33.3%;
+    background-image: url(../img/amazonia.jpg);
+    background-size: 100%;
+    position: absolute;
+    left: calc(25% * 3);
+    top: 33.3%;
+    text-align: center;
+    font-size: 40px;
+}
+
+#img5 {
+    width: 25%;
+    height: 33.3%;
+    background-image: url(../img/pantanal.jpg);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: calc(33.3% * 2);
+    text-align: center;
+    font-size: 40px;
+}
+
+#textoimg5{
+    width: 25%;
+    height: 33.3%;
+    position: absolute;
+    left: 25%;
+    top: calc(33.3% * 2);
+}
+
+#img6{
+    width: 25%;
+    height: 33.3%;
+    background-image: url(../img/pampas.jpg);
+    background-size: cover;
+    position: absolute;
+    left: calc(25%*2);
+    top: calc(33.3%*2);
+    text-align: center;
+    font-size: 40px;
+}
+
+#textoimg6{
+    width: 25%;
+    height: 33.3%;
+    position: absolute;
+    left: calc(25%* 3);
+    top: calc(33.3% * 2);
+}
+
+#textoimg1 ul, #textoimg2 ul, #textoimg3 ul,#textoimg4 ul
+,#textoimg5 ul, #textoimg6 ul{
+    padding-left: 1.2rem;
+    text-align: left;
+    margin: .5rem;
+    font-size: .9rem;
+    color: whitesmoke;
+}
+
+.video{
+    width: 100vw;
+    height: 850px;
+    padding: 35px 0;
+    background-color: rgba( 180, 210, 252, .5);
+    margin: 0 auto;
+    margin-top: 5rem;
+    background-image: url(.././img/Onca.jpg);
+    background-blend-mode: saturation;
+    background-size: cover;
+    position: relative;
+}
+
+#content-video{
+    width: 800px;
+    margin: 0 auto;
+
+    top: 1rem;
+}
+
+
+#video-container h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+    max-width: 50%;
+    margin-bottom: .3rem;
+}
+
+#video-container span p{
+    font-size: 1.3rem;
+    max-width: 90%;
+    
+}
+
+#video-box{
+    position: absolute;
+    display: flex;
+    height: 300px;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: whitesmoke;
+    flex-wrap: wrap-reverse;
+    align-items: stretch;
+    justify-content: start;
+}
+
+#video{
+    width:49.5%;
+    height: 300px;
+    background-image: url(../img/videodeverdade.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#info-video{
+    width:49.5%;
+    height: 300px;
+    background-color: whitesmoke;
+    vertical-align: top;
+}
+
+#info-video p{
+    margin: .5rem 0 .5rem 1rem;
+    max-width: 90%;
+}
+
+#info-video button{
+    margin-left: 1rem;
+    background-color: rgb(38, 146, 173);
+    color: whitesmoke;
+    font-weight: bold;
+    border:none;
+    width: 60%;
+    padding: .5rem 0;
+}
+
+a{  
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#container-animals{
+    width: 100vw;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#container-animals h1{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 0;
+    padding-top: 2rem;
+}
+
+#container-animals p{
+    text-align: center;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    font-size: 1.15rem;
+}
+
+#icones-animais{
+    width: 800px;
+    height: 130px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#animal-1{
+    position: absolute;
+    width: calc(800px / 6);
+    margin-left: 0;
+    height: 100%;
+}
+
+#animal-1 img{
+    width: 100%;
+}
+
+#animal-2{
+    position: absolute;
+    width: calc(800px / 6);
+    margin-left: calc((800px / 6));
+    height: 100%;
+}
+
+#animal-2 img{
+    width: 100%;
+}
+
+#animal-3{
+    position: absolute;
+    width: calc(800px / 6);
+    margin-left: calc((800px / 6) * 2);
+    height: 100%;
+}
+
+#animal-3 img{
+    width: 100%;
+}
+
+#animal-4{
+    position: absolute;
+    width: calc(800px / 6);
+    margin-left: calc((800px / 6) * 3);
+    height: 100%;
+}
+
+#animal-4 img{
+    width: 100%;
+}
+
+#animal-5{
+    position: absolute;
+    width: calc(800px / 6);
+    margin-left: calc((800px / 6) * 4);
+    height: 100%;
+}
+
+#animal-5 img{
+    width: 100%;
+}
+
+#animal-6{
+    position: absolute;
+    width: calc(800px / 6);
+    margin-left: calc((800px / 6) * 5);
+    height: 100%;
+}
+
+#animal-6 img{
+    width: 100%;
+}
+
+#whysupport{
+    width: 100vw;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+#whysupport h1{
+    margin-top: 0;
+    
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+#ws-p1{
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+#whysupport-container{
+    width: 800px ;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+
+.motives{
+    width: 80%;
+    margin-bottom: 1rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.motives img, #last-motive img{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: .6rem;
+}
+
+#jacare, #arara, #onca, #boto, #lobo-guara{
+    height: 4rem;
+}
+
+.motives-text{
+    display: inline-block;
+}
+
+.motives h2, #last-motive h2{
+    font-size: 1.05rem;
+}
+
+.motives-text h2, .motives-text p, #last-motive h2, #last-motive p{
+    margin: 0;
+}
+
+#last-motive p{
+    display: inline-block;
+}
+
+#button-ws{
+    width: 10rem;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+#whysupport button{
+    width: 10rem;
+    background-color: rgb(38, 146, 173);
+    border: none;
+    padding: .5rem 0;
+    font-weight: bold;
+}
+
+#quotes{
+    width: 100vw;
+    margin: 0 auto; 
+    margin-bottom: 5rem;
+}
+
+#aspa-img{
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+}
+
+#aspa-img img{
+    height: 20px;
+}
+
+.quote{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.quote::before{
+    content: open-quote;
+}
+
+.quote::after{
+    content: close-quote;
+}
+
+#person-quoted{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#chooser{
+    width: fit-content;
+    height: 15px;
+    margin: 0 auto;
+}
+
+.choose{
+    display:inline-block;
+    height: 13px;
+    width: 14px;
+    border: solid 1px rgb(38, 146, 173);   
+    border-radius: 15px;
+    background-color: white;
+    margin: 0 1px;
+}
+
+.choose:first-of-type{
+    background-color: rgb(38, 146, 173);
+}
+
+#last-form{
+    width: 100vw;
+    height: 630px;
+    margin: 0 auto;
+    background-color: #1b512d;
+    background-image: url(../img/micos.jpg);
+    background-size: cover;
+    position:relative;
+}
+
+#last-form::before{
+    background-color: #1b512de5;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.last-form-content{
+    width: 550px;
+    height: 550px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.last-form-content h1{
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 3.5rem;
+    color: white;
+    font-weight: bold;
+    margin: .6rem 0;
+}
+
+.last-form-content h2{
+    text-align: center;
+    font-size: 1.9rem;
+    color: white;
+    font-weight: bold;
+    margin: .6rem 0;
+}
+.last-form-content p:first-of-type{
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    margin: .6rem 0 2.5rem 0;
+}
+
+#form-camps{
+    width: 100%;
+    height: 300px;
+    background-color: whitesmoke;
+}
+
+#form-camps p{
+    padding-top: 2rem;
+    color: rgba(50, 170, 250, 0.85);
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#form-final{
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto
+}
+#form-camps form{
+    margin-left: 1.5rem;
+}
+
+#form-camps form input{
+    width: 35%;
+    background-color:rgba( 180, 210, 252, .5);
+    border: none;
+    height: 2.2rem ;
+    margin: .5rem 
+}
+
+
+#form-camps form input[type=text]{
+    background-image: url(../img/formauser.png);
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+
+#form-camps form input[type=tel]{
+    background-image: url(../img/phoneinput.png);
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+
+#form-camps form input[type=email]{
+    background-image: url(../img/email.png);
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+#form-camps select{
+    width: 44%;
+    background-color:rgba( 180, 210, 252, .5);
+    border: none;
+    height: 2.2rem ;
+    margin: .5rem;
+    background-image: url(../img/wallet.png);
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+#last-info{
+    width: 44%;
+    height: fit-content;
+    margin: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+#last-info img{
+    margin-right: .3rem;
+    vertical-align: middle;
+}
+
+#last-info p{
+    font-size: .8rem;
+    margin: 0;
+    padding-top: 0;
+    padding-left: .5rem;
+    text-align: left;
+    color: rgb(121, 120, 120); 
+}
+
+
+#form-camps form input[type=submit]{
+    width: 44%;
+    background-color: rgb(38, 146, 173);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer{
+    padding: 1rem 0 1rem 0;
+    width: 100vw;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: rgb(58, 58, 58);
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+footer p:first-of-type{
+    margin-bottom: .2rem;
+}
